@@ -16,7 +16,7 @@ const doubled = number => {
 const doubledList = numbers.map(doubled, 0);
 console.log(doubledList);
 
-const prices = price => `$${price}.00`;
+const prices = price => '$' + price.toFixed(2);
 
 const priceList = numbers.map(prices, 0);
 console.log(priceList);
