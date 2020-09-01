@@ -23,5 +23,6 @@ console.log(overFive);
 const startWithE = names.filter(name => name.startsWith('E'));
 console.log(startWithE);
 
-const haveD = names.filter(name => name.includes('d' || 'D'));
-console.log(haveD);
+const haveD = names.filter(name => name.includes('d'));
+const startsWithD = names.filter(name => name.includes('D'));
+console.log(haveD.concat(startsWithD));
