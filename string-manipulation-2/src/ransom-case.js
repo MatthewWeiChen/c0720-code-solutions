@@ -1,7 +1,4 @@
 /* eslint-disable no-unused-vars */
-// every other word is capitalized
-// odd number index
-
 const ransomCase = string => {
   let newString = '';
   for (let i = 0; i < string.length; i++) {
