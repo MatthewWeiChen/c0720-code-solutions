@@ -2,8 +2,12 @@
 
 const takeRight = (array, count) => {
   const elementsKept = [];
-  for (let i = count; i > 0; i--) {
-    elementsKept.push(array[i]);
+  if (count > array.length) {
+    return array;
+  } else {
+    for (let i = count; i > 0; i--) {
+      elementsKept.push(array[array.length - i]);
+    }
   }
   return elementsKept;
 };
