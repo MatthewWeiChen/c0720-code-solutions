@@ -15,10 +15,9 @@ const grades = [
 ];
 const app = express();
 
-app.use((req, res, next) => {
-  if (req.originalUrl === '/api/grades') {
-    res.json(grades);
-  }
+app.get('/api/grades', (req, res) => {
+  res.json(grades);
+
 });
 
 app.listen(3000, () => {
