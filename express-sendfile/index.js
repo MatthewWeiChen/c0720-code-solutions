@@ -3,11 +3,11 @@ const app = express();
 
 app.use((req, res, next) => {
   if (req.originalUrl === '/index.html') {
-    res.sendFile('/home/dev/lfz/c0720-code-solutions/express-sendfile/index.html');
+    res.sendFile('/index.html', { root: __dirname });
   } else if (req.originalUrl === '/styles.css') {
-    res.sendFile('/home/dev/lfz/c0720-code-solutions/express-sendfile/styles.css');
+    res.sendFile('/styles.css', { root: __dirname });
   } else if (req.originalUrl === '/main.js') {
-    res.sendFile('/home/dev/lfz/c0720-code-solutions/express-sendfile/main.js');
+    res.sendFile('/main.js', { root: __dirname });
   } else {
     next();
   }
