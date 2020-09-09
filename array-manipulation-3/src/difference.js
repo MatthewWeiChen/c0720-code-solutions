@@ -1,8 +1,4 @@
 /* eslint-disable no-unused-vars */
-// input two arrays
-// output new array
-// difference between first and second
-
 const difference = (first, second) => {
   const differenceList = [];
   for (let i = 0; i < first.length; i++) {
