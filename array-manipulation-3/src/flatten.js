@@ -9,10 +9,10 @@
 // if its nested go into array and push individual elements out.
 
 const flatten = array => {
-  const flattenedArr = [];
+  let flattenedArr = [];
   for (let i = 0; i < array.length; i++) {
     if (Array.isArray(array[i])) {
-      flattenedArr.concat(array[i]);
+      flattenedArr = flattenedArr.concat(array[i]);
     } else {
       flattenedArr.push(array[i]);
     }
