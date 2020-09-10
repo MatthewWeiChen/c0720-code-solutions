@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
 
 const isPalindromic = string => {
-  const checkCase = /[\W_]/g;
-  const palendromePossible = string.replace(checkCase, '');
+  const findSpace = /[\W_]/g;
+  const palendromePossible = string.replace(findSpace, '');
   const letterReverse = palendromePossible.split('').reverse().join('');
   return palendromePossible === letterReverse;
 };
