@@ -9,11 +9,9 @@ app.use(parseJson);
 app.post('/api/grades', (req, res) => {
   const jsonBody = req.body;
   res.status(201);
-  if (res.status(201)) {
-    jsonBody.id = nextId++;
-  }
+  jsonBody.id = nextId++;
   grades.push(jsonBody);
-  res.json(grades);
+  res.json(jsonBody);
 });
 
 app.get('/api/grades', (req, res) => {
