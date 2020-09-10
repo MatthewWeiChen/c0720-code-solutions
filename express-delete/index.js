@@ -21,10 +21,9 @@ app.get('/api/grades', (req, res) => {
 });
 
 app.delete('/api/grades/:id', (req, res) => {
-  const indexOfStudent = grades.map(student => {
-    if (student.id === req.params.id) {
-      grades.indexOf(student.id);
-    }
+  const idStringToNum = parseInt(req.params.id);
+  const indexOfStudent = grades.findIndex(student => {
+    return student.id === idStringToNum;
   });
   grades.splice(indexOfStudent, 1);
   res.sendStatus(204);
