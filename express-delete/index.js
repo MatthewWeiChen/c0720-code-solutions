@@ -16,9 +16,6 @@ const grades = [
   }
 ];
 
-const middleWare = express.json();
-app.use(middleWare);
-
 app.get('/api/grades', (req, res) => {
   res.json(grades);
 });
