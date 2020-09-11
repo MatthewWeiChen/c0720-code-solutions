@@ -3,11 +3,17 @@ const dataJson = require('./data.json');
 const app = express();
 const parseJson = express.json();
 const fs = require('fs');
+let notes = [];
 
 app.use(parseJson);
 
 app.get('/api/notes', (req, res) => {
-  res.json(dataJson);
+  notes = [];
+  for (const id in dataJson.notes) {
+    const note = dataJson.notes[id];
+    notes.push(note);
+  }
+  res.json(notes);
 });
 
 app.get('/api/notes/:id', (req, res) => {
@@ -25,31 +31,28 @@ app.get('/api/notes/:id', (req, res) => {
       error: `cannot find note with id ${req.params.id}`
     });
   }
-
 });
 
 app.post('/api/notes', (req, res) => {
-  if (Object.keys(req.body).length === 0) {
+  const jsonBody = req.body;
+  if (Object.keys(jsonBody).length === 0) {
     res.status(400).json({
       error: 'content is a required field'
     });
   } else {
+    jsonBody.id = dataJson.nextId;
+    dataJson.notes[dataJson.nextId] = req.body;
     dataJson.nextId++;
-    dataJson.notes[`${dataJson.nextId}`] = {
-      id: `${dataJson.nextId}`,
-      content: Object.values(req.body).toString()
-    };
     fs.writeFile('data.json', JSON.stringify(dataJson), err => {
       if (err) {
         res.status(500).json({
           error: 'An unexpected error has occured'
         });
       } else {
-        res.status(201).json(dataJson.notes[`${dataJson.nextId}`]);
+        res.status(201).json(jsonBody);
       }
     });
   }
-
 });
 
 app.delete('/api/notes/:id', (req, res) => {
@@ -64,7 +67,6 @@ app.delete('/api/notes/:id', (req, res) => {
     });
   } else {
     delete dataJson.notes[id];
-    dataJson.nextId--;
     fs.writeFile('data.json', JSON.stringify(dataJson), err => {
       if (err) {
         res.status(500).json({
@@ -84,7 +86,7 @@ app.put('/api/notes/:id', (req, res) => {
     res.status(400).send({
       error: 'id must be a positive integer'
     });
-  } else if (Object.keys(req.body).length === 0) {
+  } else if (Object.keys(jsonBody).length === 0) {
     res.status(400).json({
       error: 'content is a required field'
     });
@@ -94,7 +96,7 @@ app.put('/api/notes/:id', (req, res) => {
     });
   } else {
     jsonBody.nextId = id;
-    dataJson.notes[id] = req.body;
+    dataJson.notes[id] = jsonBody;
     fs.writeFile('data.json', JSON.stringify(dataJson), err => {
       if (err) {
         res.status(500).json({
