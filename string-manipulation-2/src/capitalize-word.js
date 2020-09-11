@@ -1,12 +1,14 @@
 /* eslint-disable no-unused-vars */
 const capitalizeWord = word => {
-  const capitalLetter = word.charAt().toUpperCase();
+  const lowercaseWords = word.toLowerCase();
   let lowerLetter = '';
-  for (let i = 1; i < word.length; i++) {
-    lowerLetter += word[i].toLowerCase();
+  const capitalizedWords = lowercaseWords.charAt().toUpperCase();
+
+  for (let i = 1; i < lowercaseWords.length; i++) {
+    lowerLetter += lowercaseWords[i];
   }
-  if (word.match(/[jJ]/)) {
+  if (lowercaseWords === 'javascript') {
     return 'JavaScript';
   }
-  return capitalLetter + lowerLetter;
+  return capitalizedWords + lowerLetter;
 };
