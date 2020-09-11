@@ -56,9 +56,9 @@ app.post('/api/notes', (req, res) => {
       res.status(500).json({
         error: 'An unexpected error has occured'
       });
-    } else {
-      res.status(201).json(jsonBody);
+      return;
     }
+    res.status(201).json(jsonBody);
   });
 
 });
@@ -86,9 +86,9 @@ app.delete('/api/notes/:id', (req, res) => {
       res.status(500).json({
         error: 'An unexpected error has occured'
       });
-    } else {
-      res.status(204).send();
+      return;
     }
+    res.status(204).send();
   });
 
 });
@@ -126,9 +126,9 @@ app.put('/api/notes/:id', (req, res) => {
       res.status(500).json({
         error: 'An unexpected error has occured'
       });
-    } else {
-      res.status(200).json(jsonBody);
+      return;
     }
+    res.status(200).json(jsonBody);
   });
 
 });
