@@ -39,14 +39,21 @@ const titleCase = title => {
   const lowercasedSentence = title.toLowerCase();
   const sentenceArray = lowercasedSentence.split(' ');
   const lowerLetters = '';
-  // for (let i = 0; i < sentenceArray.length; i++) {
-  //   if (sentenceArray[i].length > 4) {
+  for (let i = 0; i < sentenceArray.length; i++) {
+    if (sentenceArray[i].length >= 4) {
+      const letterArr = sentenceArray[i].split('');
+      const upperFirstLetter = letterArr.charAt().toUpperCase(); // its an array not a string
+      let restOfLetters = '';
+      for (let j = 1; j < letterArr.length; j++) {
+        restOfLetters += letterArr[i];
+      }
+      return upperFirstLetter + restOfLetters;
+    }
+    // const individualLetters = sentenceArray[i].split('');
+    // for (let j = 0; j < individualLetters.length; j++) {
 
-  //   }
-  // const individualLetters = sentenceArray[i].split('');
-  // for (let j = 0; j < individualLetters.length; j++) {
-
-  // }
+    // }
+  }
+  // console.log(sentenceArray);
+  // };
 };
-// console.log(sentenceArray);
-// };
