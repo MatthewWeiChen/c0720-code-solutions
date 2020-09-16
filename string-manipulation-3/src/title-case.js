@@ -19,7 +19,7 @@ const minorWords = [
   'to'
 ];
 
-const specialWords = ['JavaScript', 'API'];
+const specialWords = ['javascript', 'api'];
 
 // if 4 or greater x
 // between hyphens
@@ -31,25 +31,21 @@ const titleCase = title => {
   const titleArr = allLowerCase.split(' ');
   const answer = [];
   for (let i = 0; i < titleArr.length; i++) {
-    if (titleArr[i].length >= 4 && titleArr[i] !== 'javascript') {
+    if (titleArr[i].length >= 4 && !specialWords.includes(titleArr[i])) {
       const upperLetter = titleArr[i].charAt(0).toUpperCase() + titleArr[i].slice(1);
       answer.push(upperLetter);
-    }
-    if (titleArr[i].endsWith(':')) {
-      const upperLetter = titleArr[i + 1].charAt(0).toUpperCase() + titleArr[i + 1].slice(1);
+    } else if (titleArr[i].length < 4 && !minorWords.includes(titleArr[i]) && !specialWords.includes(titleArr[i])) {
+      const upperLetter = titleArr[i].charAt(0).toUpperCase() + titleArr[i].slice(1);
       answer.push(upperLetter);
-    }
-    if (minorWords.includes(titleArr[i])) {
+    } else if (minorWords.includes(titleArr[i])) {
       answer.push(titleArr[i]);
-    }
-    if (titleArr[i] === 'javascript') {
+    } else if (titleArr[i] === 'javascript') {
       answer.push('JavaScript');
-    }
-    if (titleArr[i] === 'api') {
+    } else if (titleArr[i] === 'api') {
       answer.push('API');
     }
     // if element before current index has ":" capitalize
-
+    // i recommend splitting the title by ': ' then operating on the first half and the second half
   }
   return answer.join(' ');
 };
