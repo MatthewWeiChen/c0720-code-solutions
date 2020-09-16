@@ -1,17 +1,4 @@
 /* eslint-disable no-unused-vars */
-// input string
-// output string with APA title case style
-
-// capitalize first word of the title and any subtitle
-// capitalize major words and hyphenated major words
-// capitalize all words of four letters or more
-// lowercase minor words
-
-// data structure - array
-// includes for search
-// break it down into arrays
-// look at element if word is 4 letters or more must be capitalized.
-// if word is hyphen capitalize word left and right of it
 
 const minorWords = [
   'and',
@@ -34,26 +21,35 @@ const minorWords = [
 
 const specialWords = ['JavaScript', 'API'];
 
-const titleCase = title => {
-  const titledSentence = '';
-  const lowercasedSentence = title.toLowerCase();
-  const sentenceArray = lowercasedSentence.split(' ');
-  const lowerLetters = '';
-  for (let i = 0; i < sentenceArray.length; i++) {
-    if (sentenceArray[i].length >= 4) {
-      const letterArr = sentenceArray[i].split('');
-      const upperFirstLetter = letterArr.charAt().toUpperCase(); // its an array not a string
-      let restOfLetters = '';
-      for (let j = 1; j < letterArr.length; j++) {
-        restOfLetters += letterArr[i];
-      }
-      return upperFirstLetter + restOfLetters;
-    }
-    // const individualLetters = sentenceArray[i].split('');
-    // for (let j = 0; j < individualLetters.length; j++) {
+// if 4 or greater x
+// between hyphens
+// capitalize first word of the title
+// capitalize major words
 
-    // }
+const titleCase = title => {
+  const allLowerCase = title.toLowerCase();
+  const titleArr = allLowerCase.split(' ');
+  const answer = [];
+  for (let i = 0; i < titleArr.length; i++) {
+    if (titleArr[i].length >= 4 && titleArr[i] !== 'javascript') {
+      const upperLetter = titleArr[i].charAt(0).toUpperCase() + titleArr[i].slice(1);
+      answer.push(upperLetter);
+    }
+    if (titleArr[i].endsWith(':')) {
+      const upperLetter = titleArr[i + 1].charAt(0).toUpperCase() + titleArr[i + 1].slice(1);
+      answer.push(upperLetter);
+    }
+    if (minorWords.includes(titleArr[i])) {
+      answer.push(titleArr[i]);
+    }
+    if (titleArr[i] === 'javascript') {
+      answer.push('JavaScript');
+    }
+    if (titleArr[i] === 'api') {
+      answer.push('API');
+    }
+    // if element before current index has ":" capitalize
+
   }
-  // console.log(sentenceArray);
-  // };
+  return answer.join(' ');
 };
