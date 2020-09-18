@@ -7,7 +7,7 @@ export default class GenerateDetail extends React.Component {
     topics.forEach(topic => {
       topicMap.push(
         <div key={topic.title}>
-          <div className="headline"> {topic.title}</div>
+          <div className="headline" onClick={this.props.onClick}> {topic.title}</div>
           <div className="detail hidden"> {topic.detail}</div>
         </div >
       );
