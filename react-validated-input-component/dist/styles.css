@@ -1,0 +1,19 @@
+.error {
+  color: red;
+}
+
+.add-space {
+  padding-left: 10px;
+}
+
+.status-size {
+  font-size: 14px;
+}
+
+.correct {
+  color: green;
+}
+
+.hide {
+  display: none;
+}
