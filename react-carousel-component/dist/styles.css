@@ -1,0 +1,30 @@
+.img-height {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.container {
+  display: flex;
+  width: 400px;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot-spacing {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+}
+
+#root {
+  width: 600px;
+}
