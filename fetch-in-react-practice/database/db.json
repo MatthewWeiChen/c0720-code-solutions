@@ -1,19 +1,1127 @@
 {
   "todos": [
     {
+      "0": {
+        "0": {
+          "id": 1,
+          "task": "Learn to code.",
+          "isCompleted": true
+        },
+        "1": {
+          "id": 3,
+          "task": "Build projects.",
+          "isCompleted": true
+        },
+        "2": {
+          "id": 7,
+          "task": "Get a job.",
+          "isCompleted": true
+        },
+        "3": {
+          "id": 8,
+          "isCompleted": true
+        },
+        "4": {
+          "task": "eat",
+          "isCompleted": true,
+          "id": 9
+        },
+        "5": {
+          "task": "Study React",
+          "isCompleted": true,
+          "id": 10
+        },
+        "6": {
+          "task": "Finish homework",
+          "isCompleted": true,
+          "id": 11
+        },
+        "7": {
+          "task": "Study Algos",
+          "isCompleted": true,
+          "id": 12
+        },
+        "8": {
+          "task": "sleep",
+          "isCompleted": true,
+          "id": 13
+        },
+        "9": {
+          "task": "eat",
+          "isCompleted": true,
+          "id": 14
+        },
+        "10": {
+          "task": "food coma",
+          "isCompleted": true,
+          "id": 15
+        },
+        "11": {
+          "task": "awt",
+          "isCompleted": true,
+          "id": 16
+        },
+        "12": {
+          "task": "rea",
+          "isCompleted": true,
+          "id": 17
+        },
+        "13": {
+          "task": "wer",
+          "isCompleted": true,
+          "id": 18
+        },
+        "14": {
+          "task": "sleep today",
+          "isCompleted": true,
+          "id": 19
+        },
+        "15": {
+          "task": "ugh",
+          "isCompleted": true,
+          "id": 20
+        },
+        "16": {
+          "task": "whyyyy",
+          "isCompleted": true,
+          "id": 21
+        },
+        "17": {
+          "task": "hello",
+          "isCompleted": true,
+          "id": 22
+        },
+        "18": {
+          "task": "hello",
+          "isCompleted": true,
+          "id": 23
+        },
+        "19": {
+          "task": "corss this one out",
+          "isCompleted": true,
+          "id": 24
+        },
+        "20": {
+          "task": "hello",
+          "isCompleted": true,
+          "id": 25
+        },
+        "21": {
+          "task": "please work",
+          "isCompleted": true,
+          "id": 26
+        },
+        "22": {
+          "task": "feraf",
+          "isCompleted": true,
+          "id": 27
+        },
+        "23": {
+          "task": "fff",
+          "isCompleted": true,
+          "id": 28
+        },
+        "24": {
+          "task": "asdf",
+          "isCompleted": true,
+          "id": 29
+        },
+        "25": {
+          "task": "eewwf",
+          "isCompleted": true,
+          "id": 30
+        },
+        "26": {
+          "task": "rrrr",
+          "isCompleted": true,
+          "id": 31
+        },
+        "27": {
+          "task": "rrrade",
+          "isCompleted": true,
+          "id": 32
+        },
+        "28": {
+          "task": "rrrrawedqwed",
+          "isCompleted": true,
+          "id": 33
+        },
+        "29": {
+          "task": "rrewqqqq",
+          "isCompleted": true,
+          "id": 34
+        },
+        "30": {
+          "task": "wwtttt",
+          "isCompleted": true,
+          "id": 35
+        },
+        "31": {
+          "task": "www",
+          "isCompleted": true,
+          "id": 36
+        },
+        "id": 1,
+        "task": "Learn to code.",
+        "isCompleted": true
+      },
+      "1": {
+        "id": 3,
+        "task": "Build projects.",
+        "isCompleted": true
+      },
+      "2": {
+        "0": {
+          "0": {
+            "id": 1,
+            "task": "Learn to code.",
+            "isCompleted": true
+          },
+          "1": {
+            "id": 3,
+            "task": "Build projects.",
+            "isCompleted": true
+          },
+          "2": {
+            "id": 7,
+            "task": "Get a job.",
+            "isCompleted": true
+          },
+          "3": {
+            "id": 8,
+            "isCompleted": true
+          },
+          "4": {
+            "task": "eat",
+            "isCompleted": true,
+            "id": 9
+          },
+          "5": {
+            "task": "Study React",
+            "isCompleted": true,
+            "id": 10
+          },
+          "6": {
+            "task": "Finish homework",
+            "isCompleted": true,
+            "id": 11
+          },
+          "7": {
+            "task": "Study Algos",
+            "isCompleted": true,
+            "id": 12
+          },
+          "8": {
+            "task": "sleep",
+            "isCompleted": true,
+            "id": 13
+          },
+          "9": {
+            "task": "eat",
+            "isCompleted": true,
+            "id": 14
+          },
+          "10": {
+            "task": "food coma",
+            "isCompleted": true,
+            "id": 15
+          },
+          "11": {
+            "task": "awt",
+            "isCompleted": true,
+            "id": 16
+          },
+          "12": {
+            "task": "rea",
+            "isCompleted": true,
+            "id": 17
+          },
+          "13": {
+            "task": "wer",
+            "isCompleted": true,
+            "id": 18
+          },
+          "14": {
+            "task": "sleep today",
+            "isCompleted": true,
+            "id": 19
+          },
+          "15": {
+            "task": "ugh",
+            "isCompleted": true,
+            "id": 20
+          },
+          "16": {
+            "task": "whyyyy",
+            "isCompleted": true,
+            "id": 21
+          },
+          "17": {
+            "task": "hello",
+            "isCompleted": true,
+            "id": 22
+          },
+          "18": {
+            "task": "hello",
+            "isCompleted": true,
+            "id": 23
+          },
+          "19": {
+            "task": "corss this one out",
+            "isCompleted": true,
+            "id": 24
+          },
+          "20": {
+            "task": "hello",
+            "isCompleted": true,
+            "id": 25
+          },
+          "21": {
+            "task": "please work",
+            "isCompleted": true,
+            "id": 26
+          },
+          "22": {
+            "task": "feraf",
+            "isCompleted": true,
+            "id": 27
+          },
+          "23": {
+            "task": "fff",
+            "isCompleted": true,
+            "id": 28
+          },
+          "24": {
+            "task": "asdf",
+            "isCompleted": true,
+            "id": 29
+          },
+          "25": {
+            "task": "eewwf",
+            "isCompleted": true,
+            "id": 30
+          },
+          "26": {
+            "task": "rrrr",
+            "isCompleted": true,
+            "id": 31
+          },
+          "27": {
+            "task": "rrrade",
+            "isCompleted": true,
+            "id": 32
+          },
+          "28": {
+            "task": "rrrrawedqwed",
+            "isCompleted": true,
+            "id": 33
+          },
+          "29": {
+            "task": "rrewqqqq",
+            "isCompleted": true,
+            "id": 34
+          },
+          "30": {
+            "task": "wwtttt",
+            "isCompleted": true,
+            "id": 35
+          },
+          "31": {
+            "task": "www",
+            "isCompleted": true,
+            "id": 36
+          },
+          "id": 1,
+          "task": "Learn to code.",
+          "isCompleted": true
+        },
+        "1": {
+          "id": 3,
+          "task": "Build projects.",
+          "isCompleted": true
+        },
+        "2": {
+          "id": 7,
+          "task": "Get a job.",
+          "isCompleted": true
+        },
+        "3": {
+          "id": 8,
+          "isCompleted": true
+        },
+        "4": {
+          "task": "eat",
+          "isCompleted": true,
+          "id": 9
+        },
+        "5": {
+          "task": "Study React",
+          "isCompleted": true,
+          "id": 10
+        },
+        "6": {
+          "task": "Finish homework",
+          "isCompleted": true,
+          "id": 11
+        },
+        "7": {
+          "task": "Study Algos",
+          "isCompleted": true,
+          "id": 12
+        },
+        "8": {
+          "task": "sleep",
+          "isCompleted": true,
+          "id": 13
+        },
+        "9": {
+          "task": "eat",
+          "isCompleted": true,
+          "id": 14
+        },
+        "10": {
+          "task": "food coma",
+          "isCompleted": true,
+          "id": 15
+        },
+        "11": {
+          "task": "awt",
+          "isCompleted": true,
+          "id": 16
+        },
+        "12": {
+          "task": "rea",
+          "isCompleted": true,
+          "id": 17
+        },
+        "13": {
+          "task": "wer",
+          "isCompleted": true,
+          "id": 18
+        },
+        "14": {
+          "task": "sleep today",
+          "isCompleted": true,
+          "id": 19
+        },
+        "15": {
+          "task": "ugh",
+          "isCompleted": true,
+          "id": 20
+        },
+        "16": {
+          "task": "whyyyy",
+          "isCompleted": true,
+          "id": 21
+        },
+        "17": {
+          "task": "hello",
+          "isCompleted": true,
+          "id": 22
+        },
+        "18": {
+          "task": "hello",
+          "isCompleted": true,
+          "id": 23
+        },
+        "19": {
+          "task": "corss this one out",
+          "isCompleted": true,
+          "id": 24
+        },
+        "20": {
+          "task": "hello",
+          "isCompleted": true,
+          "id": 25
+        },
+        "21": {
+          "task": "please work",
+          "isCompleted": true,
+          "id": 26
+        },
+        "22": {
+          "task": "feraf",
+          "isCompleted": true,
+          "id": 27
+        },
+        "23": {
+          "task": "fff",
+          "isCompleted": true,
+          "id": 28
+        },
+        "24": {
+          "task": "asdf",
+          "isCompleted": true,
+          "id": 29
+        },
+        "25": {
+          "task": "eewwf",
+          "isCompleted": true,
+          "id": 30
+        },
+        "26": {
+          "task": "rrrr",
+          "isCompleted": true,
+          "id": 31
+        },
+        "27": {
+          "task": "rrrade",
+          "isCompleted": true,
+          "id": 32
+        },
+        "28": {
+          "task": "rrrrawedqwed",
+          "isCompleted": true,
+          "id": 33
+        },
+        "29": {
+          "task": "rrewqqqq",
+          "isCompleted": true,
+          "id": 34
+        },
+        "30": {
+          "task": "wwtttt",
+          "isCompleted": true,
+          "id": 35
+        },
+        "31": {
+          "task": "www",
+          "isCompleted": true,
+          "id": 36
+        },
+        "id": 7,
+        "task": "Get a job.",
+        "isCompleted": true
+      },
+      "3": {
+        "id": 8,
+        "isCompleted": true
+      },
+      "4": {
+        "task": "eat",
+        "isCompleted": true,
+        "id": 9
+      },
+      "5": {
+        "task": "Study React",
+        "isCompleted": true,
+        "id": 10
+      },
+      "6": {
+        "task": "Finish homework",
+        "isCompleted": true,
+        "id": 11
+      },
+      "7": {
+        "task": "Study Algos",
+        "isCompleted": true,
+        "id": 12
+      },
+      "8": {
+        "task": "sleep",
+        "isCompleted": true,
+        "id": 13
+      },
+      "9": {
+        "task": "eat",
+        "isCompleted": true,
+        "id": 14
+      },
+      "10": {
+        "task": "food coma",
+        "isCompleted": true,
+        "id": 15
+      },
+      "11": {
+        "task": "awt",
+        "isCompleted": true,
+        "id": 16
+      },
+      "12": {
+        "task": "rea",
+        "isCompleted": true,
+        "id": 17
+      },
+      "13": {
+        "task": "wer",
+        "isCompleted": true,
+        "id": 18
+      },
+      "14": {
+        "task": "sleep today",
+        "isCompleted": true,
+        "id": 19
+      },
+      "15": {
+        "task": "ugh",
+        "isCompleted": true,
+        "id": 20
+      },
+      "16": {
+        "task": "whyyyy",
+        "isCompleted": true,
+        "id": 21
+      },
+      "17": {
+        "task": "hello",
+        "isCompleted": true,
+        "id": 22
+      },
+      "18": {
+        "task": "hello",
+        "isCompleted": true,
+        "id": 23
+      },
+      "19": {
+        "task": "corss this one out",
+        "isCompleted": true,
+        "id": 24
+      },
+      "20": {
+        "task": "hello",
+        "isCompleted": true,
+        "id": 25
+      },
+      "21": {
+        "task": "please work",
+        "isCompleted": true,
+        "id": 26
+      },
+      "22": {
+        "task": "feraf",
+        "isCompleted": true,
+        "id": 27
+      },
+      "23": {
+        "task": "fff",
+        "isCompleted": true,
+        "id": 28
+      },
+      "24": {
+        "task": "asdf",
+        "isCompleted": true,
+        "id": 29
+      },
+      "25": {
+        "task": "eewwf",
+        "isCompleted": true,
+        "id": 30
+      },
+      "26": {
+        "task": "rrrr",
+        "isCompleted": true,
+        "id": 31
+      },
+      "27": {
+        "task": "rrrade",
+        "isCompleted": true,
+        "id": 32
+      },
+      "28": {
+        "task": "rrrrawedqwed",
+        "isCompleted": true,
+        "id": 33
+      },
+      "29": {
+        "task": "rrewqqqq",
+        "isCompleted": true,
+        "id": 34
+      },
+      "30": {
+        "task": "wwtttt",
+        "isCompleted": true,
+        "id": 35
+      },
+      "31": {
+        "task": "www",
+        "isCompleted": true,
+        "id": 36
+      },
       "id": 1,
       "task": "Learn to code.",
-      "isCompleted": false
+      "isCompleted": true
     },
     {
       "id": 3,
       "task": "Build projects.",
-      "isCompleted": false
+      "isCompleted": true
     },
     {
+      "0": {
+        "0": {
+          "id": 1,
+          "task": "Learn to code.",
+          "isCompleted": true
+        },
+        "1": {
+          "id": 3,
+          "task": "Build projects.",
+          "isCompleted": true
+        },
+        "2": {
+          "id": 7,
+          "task": "Get a job.",
+          "isCompleted": true
+        },
+        "3": {
+          "id": 8,
+          "isCompleted": true
+        },
+        "4": {
+          "task": "eat",
+          "isCompleted": true,
+          "id": 9
+        },
+        "5": {
+          "task": "Study React",
+          "isCompleted": true,
+          "id": 10
+        },
+        "6": {
+          "task": "Finish homework",
+          "isCompleted": true,
+          "id": 11
+        },
+        "7": {
+          "task": "Study Algos",
+          "isCompleted": true,
+          "id": 12
+        },
+        "8": {
+          "task": "sleep",
+          "isCompleted": true,
+          "id": 13
+        },
+        "9": {
+          "task": "eat",
+          "isCompleted": true,
+          "id": 14
+        },
+        "10": {
+          "task": "food coma",
+          "isCompleted": true,
+          "id": 15
+        },
+        "11": {
+          "task": "awt",
+          "isCompleted": true,
+          "id": 16
+        },
+        "12": {
+          "task": "rea",
+          "isCompleted": true,
+          "id": 17
+        },
+        "13": {
+          "task": "wer",
+          "isCompleted": true,
+          "id": 18
+        },
+        "14": {
+          "task": "sleep today",
+          "isCompleted": true,
+          "id": 19
+        },
+        "15": {
+          "task": "ugh",
+          "isCompleted": true,
+          "id": 20
+        },
+        "16": {
+          "task": "whyyyy",
+          "isCompleted": true,
+          "id": 21
+        },
+        "17": {
+          "task": "hello",
+          "isCompleted": true,
+          "id": 22
+        },
+        "18": {
+          "task": "hello",
+          "isCompleted": true,
+          "id": 23
+        },
+        "19": {
+          "task": "corss this one out",
+          "isCompleted": true,
+          "id": 24
+        },
+        "20": {
+          "task": "hello",
+          "isCompleted": true,
+          "id": 25
+        },
+        "21": {
+          "task": "please work",
+          "isCompleted": true,
+          "id": 26
+        },
+        "22": {
+          "task": "feraf",
+          "isCompleted": true,
+          "id": 27
+        },
+        "23": {
+          "task": "fff",
+          "isCompleted": true,
+          "id": 28
+        },
+        "24": {
+          "task": "asdf",
+          "isCompleted": true,
+          "id": 29
+        },
+        "25": {
+          "task": "eewwf",
+          "isCompleted": true,
+          "id": 30
+        },
+        "26": {
+          "task": "rrrr",
+          "isCompleted": true,
+          "id": 31
+        },
+        "27": {
+          "task": "rrrade",
+          "isCompleted": true,
+          "id": 32
+        },
+        "28": {
+          "task": "rrrrawedqwed",
+          "isCompleted": true,
+          "id": 33
+        },
+        "29": {
+          "task": "rrewqqqq",
+          "isCompleted": true,
+          "id": 34
+        },
+        "30": {
+          "task": "wwtttt",
+          "isCompleted": true,
+          "id": 35
+        },
+        "31": {
+          "task": "www",
+          "isCompleted": true,
+          "id": 36
+        },
+        "id": 1,
+        "task": "Learn to code.",
+        "isCompleted": true
+      },
+      "1": {
+        "id": 3,
+        "task": "Build projects.",
+        "isCompleted": true
+      },
+      "2": {
+        "id": 7,
+        "task": "Get a job.",
+        "isCompleted": true
+      },
+      "3": {
+        "id": 8,
+        "isCompleted": true
+      },
+      "4": {
+        "task": "eat",
+        "isCompleted": true,
+        "id": 9
+      },
+      "5": {
+        "task": "Study React",
+        "isCompleted": true,
+        "id": 10
+      },
+      "6": {
+        "task": "Finish homework",
+        "isCompleted": true,
+        "id": 11
+      },
+      "7": {
+        "task": "Study Algos",
+        "isCompleted": true,
+        "id": 12
+      },
+      "8": {
+        "task": "sleep",
+        "isCompleted": true,
+        "id": 13
+      },
+      "9": {
+        "task": "eat",
+        "isCompleted": true,
+        "id": 14
+      },
+      "10": {
+        "task": "food coma",
+        "isCompleted": true,
+        "id": 15
+      },
+      "11": {
+        "task": "awt",
+        "isCompleted": true,
+        "id": 16
+      },
+      "12": {
+        "task": "rea",
+        "isCompleted": true,
+        "id": 17
+      },
+      "13": {
+        "task": "wer",
+        "isCompleted": true,
+        "id": 18
+      },
+      "14": {
+        "task": "sleep today",
+        "isCompleted": true,
+        "id": 19
+      },
+      "15": {
+        "task": "ugh",
+        "isCompleted": true,
+        "id": 20
+      },
+      "16": {
+        "task": "whyyyy",
+        "isCompleted": true,
+        "id": 21
+      },
+      "17": {
+        "task": "hello",
+        "isCompleted": true,
+        "id": 22
+      },
+      "18": {
+        "task": "hello",
+        "isCompleted": true,
+        "id": 23
+      },
+      "19": {
+        "task": "corss this one out",
+        "isCompleted": true,
+        "id": 24
+      },
+      "20": {
+        "task": "hello",
+        "isCompleted": true,
+        "id": 25
+      },
+      "21": {
+        "task": "please work",
+        "isCompleted": true,
+        "id": 26
+      },
+      "22": {
+        "task": "feraf",
+        "isCompleted": true,
+        "id": 27
+      },
+      "23": {
+        "task": "fff",
+        "isCompleted": true,
+        "id": 28
+      },
+      "24": {
+        "task": "asdf",
+        "isCompleted": true,
+        "id": 29
+      },
+      "25": {
+        "task": "eewwf",
+        "isCompleted": true,
+        "id": 30
+      },
+      "26": {
+        "task": "rrrr",
+        "isCompleted": true,
+        "id": 31
+      },
+      "27": {
+        "task": "rrrade",
+        "isCompleted": true,
+        "id": 32
+      },
+      "28": {
+        "task": "rrrrawedqwed",
+        "isCompleted": true,
+        "id": 33
+      },
+      "29": {
+        "task": "rrewqqqq",
+        "isCompleted": true,
+        "id": 34
+      },
+      "30": {
+        "task": "wwtttt",
+        "isCompleted": true,
+        "id": 35
+      },
+      "31": {
+        "task": "www",
+        "isCompleted": true,
+        "id": 36
+      },
       "id": 7,
       "task": "Get a job.",
-      "isCompleted": false
+      "isCompleted": true
+    },
+    {
+      "id": 8,
+      "isCompleted": true
+    },
+    {
+      "task": "eat",
+      "isCompleted": true,
+      "id": 9
+    },
+    {
+      "task": "Study React",
+      "isCompleted": true,
+      "id": 10
+    },
+    {
+      "task": "Finish homework",
+      "isCompleted": true,
+      "id": 11
+    },
+    {
+      "task": "Study Algos",
+      "isCompleted": true,
+      "id": 12
+    },
+    {
+      "task": "sleep",
+      "isCompleted": true,
+      "id": 13
+    },
+    {
+      "task": "eat",
+      "isCompleted": true,
+      "id": 14
+    },
+    {
+      "task": "food coma",
+      "isCompleted": true,
+      "id": 15
+    },
+    {
+      "task": "awt",
+      "isCompleted": true,
+      "id": 16
+    },
+    {
+      "task": "rea",
+      "isCompleted": true,
+      "id": 17
+    },
+    {
+      "task": "wer",
+      "isCompleted": true,
+      "id": 18
+    },
+    {
+      "task": "sleep today",
+      "isCompleted": true,
+      "id": 19
+    },
+    {
+      "task": "ugh",
+      "isCompleted": true,
+      "id": 20
+    },
+    {
+      "task": "whyyyy",
+      "isCompleted": true,
+      "id": 21
+    },
+    {
+      "task": "hello",
+      "isCompleted": true,
+      "id": 22
+    },
+    {
+      "task": "hello",
+      "isCompleted": true,
+      "id": 23
+    },
+    {
+      "task": "corss this one out",
+      "isCompleted": true,
+      "id": 24
+    },
+    {
+      "task": "hello",
+      "isCompleted": true,
+      "id": 25
+    },
+    {
+      "task": "please work",
+      "isCompleted": true,
+      "id": 26
+    },
+    {
+      "task": "feraf",
+      "isCompleted": true,
+      "id": 27
+    },
+    {
+      "task": "fff",
+      "isCompleted": true,
+      "id": 28
+    },
+    {
+      "task": "asdf",
+      "isCompleted": true,
+      "id": 29
+    },
+    {
+      "task": "eewwf",
+      "isCompleted": true,
+      "id": 30
+    },
+    {
+      "task": "rrrr",
+      "isCompleted": true,
+      "id": 31
+    },
+    {
+      "task": "rrrade",
+      "isCompleted": true,
+      "id": 32
+    },
+    {
+      "task": "rrrrawedqwed",
+      "isCompleted": true,
+      "id": 33
+    },
+    {
+      "task": "rrewqqqq",
+      "isCompleted": true,
+      "id": 34
+    },
+    {
+      "task": "wwtttt",
+      "isCompleted": true,
+      "id": 35
+    },
+    {
+      "task": "www",
+      "isCompleted": true,
+      "id": 36
+    },
+    {
+      "task": "oooo",
+      "isCompleted": true,
+      "id": 37
+    },
+    {
+      "task": "i totally broke this",
+      "isCompleted": true,
+      "id": 38
     }
   ]
 }

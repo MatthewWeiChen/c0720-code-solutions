@@ -14,9 +14,9 @@ function Todo(props) {
           type="checkbox"
           checked={todo.isCompleted}
           className="form-check-input"
-          onChange={() => props.toggleCompleted(todo.id)}/>
+          onChange={() => props.toggleCompleted(todo.id)} />
         <label className={taskClass} htmlFor={idAttr}>
-          { props.todo.task }
+          {props.todo.task}
         </label>
       </div>
     </li>
@@ -32,7 +32,7 @@ function TodoList(props) {
             <Todo
               key={todo.id}
               todo={todo}
-              toggleCompleted={props.toggleCompleted}/>
+              toggleCompleted={props.toggleCompleted} />
           );
         })
       }
