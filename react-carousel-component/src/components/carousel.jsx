@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // import Images from './images';
 
 const images =
@@ -9,52 +9,37 @@ const images =
     'https://i6.mangareader.net/worst/107/worst-2296981.jpg'
   ];
 
-export default class Carousel extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      moving: true
-    };
-    this.getNewImage = this.getNewImage.bind(this);
-  }
+const Carousel = () => {
+  const [current, setCurrent] = useState(0);
+  const imagesLength = images.length;
+  const goNextImage = () => {
+    setCurrent(current === imagesLength - 1 ? 0 : current + 1);
+  };
 
-  componentDidMount() {
-    setInterval(this.getNewImage, 3000);
-  }
-  // getImageList(props) {
-  //   const images = this.props.images;
-  //   const imageList = images.map(image => {
-  //     return (
-  //       <Images image={image.link} key={image.id} />
-  //     );
-  //   });
-  // }
+  useEffect(() => {
+    setTimeout(goNextImage, 3000);
+  });
 
-  getNewImage() {
-    return images[0].link;
-  }
-
-  render() {
-    const newImage = this.getNewImage();
-    return (
-      <>
-        <div className="container">
-          <div className="arrow-container">
-            <i className="fas fa-angle-left fa-3x"></i>
-          </div>
-          <img src={String(newImage)} alt="worst" className="img-height" />
-          <div className="arrow-container">
-            <i className="fas fa-angle-right fa-3x"></i>
-          </div>
+  return (
+    <>
+      <div className="container">
+        <div className="arrow-container">
+          <i className="fas fa-angle-left fa-3x"></i>
         </div>
-        <div className="dot-container">
-          <i className="fas fa-circle dot-spacing"></i>
-          <i className="far fa-circle dot-spacing"></i>
-          <i className="far fa-circle dot-spacing"></i>
-          <i className="far fa-circle dot-spacing"></i>
-          <i className="far fa-circle dot-spacing"></i>
+        <img src='https://pm1.narvii.com/6381/46fefa526ad53600a1440d443bdcf4f6f6e6b866_hq.jpg' alt="worst" className="img-height" />
+        <div className="arrow-container">
+          <i className="fas fa-angle-right fa-3x"></i>
         </div>
-      </>
-    );
-  }
-}
+      </div>
+      <div className="dot-container">
+        <i className="fas fa-circle dot-spacing"></i>
+        <i className="far fa-circle dot-spacing"></i>
+        <i className="far fa-circle dot-spacing"></i>
+        <i className="far fa-circle dot-spacing"></i>
+        <i className="far fa-circle dot-spacing"></i>
+      </div>
+    </>
+  );
+};
+
+export default Carousel;
