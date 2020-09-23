@@ -39,13 +39,13 @@ class App extends React.Component {
       todo.id === todoId
         ? {
           ...todo,
-          isCompleted: true
+          isCompleted: !this.state.todo.isCompleted
         } : todo)
     );
     const init = {
       method: 'PATCH',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ isCompleted: true })
+      body: JSON.stringify({ isCompleted: !this.state.todo.isCompleted })
     };
     fetch(`/api/todos/${todoId}`, init)
       .then(res => res.json())
