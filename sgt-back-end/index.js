@@ -49,7 +49,8 @@ app.post('/api/grades', (req, res, next) => {
   const params = [newGrade.name, newGrade.course, newGrade.grade];
   db.query(sql, params)
     .then(result => {
-      res.json(params);
+      const grade = result.rows[0];
+      res.json(grade);
     })
     .catch(err => {
       console.error(err);
