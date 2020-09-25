@@ -43,7 +43,8 @@ app.post('/api/grades', (req, res, next) => {
   }
   const sql = `
   insert into "grades" ("name","course","grade")
-  values($1,$2,$3)`;
+  values($1,$2,$3)
+  returning *`;
 
   const params = [newGrade.name, newGrade.course, newGrade.grade];
   db.query(sql, params)
@@ -117,7 +118,8 @@ app.delete('/api/grades/:gradeId', (req, res, next) => {
 
   db.query(sql, params)
     .then(result => {
-      if (!params) {
+      const grade = result.rows[0];
+      if (!grade) {
         res.status(404).json({
           error: `Cannot find grade with gradeId ${gradeId}`
         });
