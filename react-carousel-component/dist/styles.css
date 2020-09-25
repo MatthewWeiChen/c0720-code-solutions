@@ -1,12 +1,12 @@
 .img-height {
-  height: 400px;
+  height: 200px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .container {
   display: flex;
-  width: 400px;
+  width: 300px;
 }
 
 .arrow-container {
@@ -27,4 +27,8 @@
 
 #root {
   width: 600px;
+}
+
+.hidden {
+  display: none;
 }

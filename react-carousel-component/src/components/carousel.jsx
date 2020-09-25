@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 // import Images from './images';
 
-const Carousel = props => {
+const Carousel = ({ images }) => {
   const [current, setCurrent] = useState(0);
-  const imagesLength = props.images.length;
+  const imagesLength = images.length;
 
   const goNextImage = () => {
     setCurrent(current === imagesLength - 1 ? 0 : current + 1);
@@ -19,7 +19,13 @@ const Carousel = props => {
         <div className="arrow-container">
           <i className="fas fa-angle-left fa-3x"></i>
         </div>
-        <img src={props.images[0]} alt="worst" className="img-height" />
+        <div>
+          {images.map((image, index) => (
+            <div className={index === current ? 'img-height' : 'hidden'} key={index}>
+              <img src={image} alt="worst" />
+            </div>
+          ))}
+        </div>
         <div className="arrow-container">
           <i className="fas fa-angle-right fa-3x"></i>
         </div>
