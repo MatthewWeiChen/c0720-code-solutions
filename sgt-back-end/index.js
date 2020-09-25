@@ -21,7 +21,7 @@ app.get('/api/grades', (req, res, next) => {
   db.query(sql)
     .then(result => {
       const grades = result.rows;
-      res.json(grades);
+      res.status(200).json(grades);
     })
     .catch(err => {
       console.error(err);
@@ -50,7 +50,7 @@ app.post('/api/grades', (req, res, next) => {
   db.query(sql, params)
     .then(result => {
       const grade = result.rows[0];
-      res.json(grade);
+      res.status(201).json(grade);
     })
     .catch(err => {
       console.error(err);
