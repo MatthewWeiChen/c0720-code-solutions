@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-// import Images from './images';
 
 const Carousel = ({ images }) => {
   const [current, setCurrent] = useState(0);
@@ -21,8 +20,8 @@ const Carousel = ({ images }) => {
         </div>
         <div>
           {images.map((image, index) => (
-            <div className={index === current ? 'img-height' : 'hidden'} key={index}>
-              <img src={image} alt="worst" />
+            <div className={index === current ? 'show' : 'hidden'} key={index}>
+              <img className="img-height" src={image} alt="worst" />
             </div>
           ))}
         </div>

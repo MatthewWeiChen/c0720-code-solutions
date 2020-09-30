@@ -1,12 +1,14 @@
 .img-height {
-  height: 200px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
+  object-fit: contain;
+  display: block;
 }
 
 .container {
   display: flex;
-  width: 300px;
+  width: 400px;
 }
 
 .arrow-container {
@@ -25,10 +27,10 @@
   margin-top: 5px;
 }
 
-#root {
-  width: 600px;
-}
-
 .hidden {
   display: none;
+}
+
+.show {
+  display: block;
 }
