@@ -1,14 +1,8 @@
 .img-height {
-  height: 400px;
-  margin-left: auto;
-  margin-right: auto;
+  height: 600px;
+  width: 600px;
   object-fit: contain;
   display: block;
-}
-
-.container {
-  display: flex;
-  width: 400px;
 }
 
 .arrow-container {
