@@ -33,14 +33,15 @@ const Carousel = ({ images }) => {
                 <img className="img-height" src={image} alt="worst" />
               </div>
             ))}
+            <div className="dot-container">
+              {dotOrder.map((dot, index) => (
+                <i className={`${index === current ? 'fas' : 'far'} fa-circle dot-spacing`} key={index}></i>
+              ))}
+            </div>
           </div>
           <i onClick={moveRight} className="fas fa-angle-right fa-3x ml-5"></i>
         </div>
-        <div className="dot-container">
-          {dotOrder.map((dot, index) => (
-            <i className={`${index === current ? 'fas' : 'far'} fa-circle dot-spacing`} key={index}></i>
-          ))}
-        </div>
+
       </div>
     </>
   );
