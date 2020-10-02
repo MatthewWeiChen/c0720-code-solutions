@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Carousel = ({ images }) => {
   const [current, setCurrent] = useState(0);
   const imagesLength = images.length;
+  const dotOrder = [0, 1, 2, 3];
 
   const goNextImage = () => {
     setCurrent(current === imagesLength - 1 ? 0 : current + 1);
@@ -21,8 +22,6 @@ const Carousel = ({ images }) => {
     setCurrent(current === 0 ? 3 : current - 1);
   };
 
-  // dots hide or show depending on index
-
   return (
     <>
       <div className="container">
@@ -38,12 +37,10 @@ const Carousel = ({ images }) => {
           <i onClick={moveRight} className="fas fa-angle-right fa-3x ml-5"></i>
         </div>
         <div className="dot-container">
-          <i className="fas fa-circle dot-spacing"></i>
-          <i className="far fa-circle dot-spacing"></i>
-          <i className="far fa-circle dot-spacing"></i>
-          <i className="far fa-circle dot-spacing"></i>
+          {dotOrder.map((dot, index) => (
+            <i className={`${index === current ? 'fas' : 'far'} fa-circle dot-spacing`} key={index}></i>
+          ))}
         </div>
-
       </div>
     </>
   );
