@@ -22,6 +22,8 @@ const Carousel = ({ images }) => {
     setCurrent(current === 0 ? 3 : current - 1);
   };
 
+  // onclick dot index to setCurrent state
+
   return (
     <>
       <div className="container">
@@ -35,7 +37,7 @@ const Carousel = ({ images }) => {
             ))}
             <div className="dot-container">
               {dotOrder.map((dot, index) => (
-                <i className={`${index === current ? 'fas' : 'far'} fa-circle dot-spacing`} key={index}></i>
+                <i className={`${index === current ? 'fas' : 'far'} fa-circle dot-spacing`} onClick={() => setCurrent(index)} key={index}></i>
               ))}
             </div>
           </div>
