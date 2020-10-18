@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 const Carousel = ({ images }) => {
   const [current, setCurrent] = useState(0);
   const imagesLength = images.length;
-  const dotOrder = [0, 1, 2, 3];
+  const dotOrder = images;
 
   const goNextImage = () => {
     setCurrent(current === imagesLength - 1 ? 0 : current + 1);
@@ -21,8 +21,6 @@ const Carousel = ({ images }) => {
   const moveLeft = () => {
     setCurrent(current === 0 ? 3 : current - 1);
   };
-
-  // onclick dot index to setCurrent state
 
   return (
     <>
