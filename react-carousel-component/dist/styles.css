@@ -1,0 +1,29 @@
+.img-height {
+  height: 600px;
+  width: 600px;
+  object-fit: contain;
+  display: block;
+}
+
+.arrow-container {
+  display: flex;
+  align-items: center;
+}
+
+.dot-container {
+  display: flex;
+  justify-content: center;
+}
+
+.dot-spacing {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.show {
+  display: block;
+}
