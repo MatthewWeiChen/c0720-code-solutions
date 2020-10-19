@@ -19,7 +19,7 @@ const Carousel = ({ images }) => {
   };
 
   const moveLeft = () => {
-    setCurrent(current === 0 ? 3 : current - 1);
+    setCurrent(current === 0 ? imagesLength - 1 : current - 1);
   };
 
   return (
